@@ -13,7 +13,10 @@ const nextConfig = {
                 hostname: 'images.unsplash.com'
             }
         ]
-    }
+    },
+    experimental: {
+        missingSuspenseWithCSRBailout: false
+    } // 파일 읽고 쓰기에 대한 에러가 나올때 그것에 대한 카테고리가 나옴
 };
 
 export default nextConfig;
